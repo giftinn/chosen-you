@@ -240,7 +240,7 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>I belongs to You</h1>
+<h1>I belong to You</h1>
 <p>Special present For someone i love the most.</p>
 <button onclick="next()">Unlock</button>
 </section>
@@ -462,7 +462,8 @@ function startTimer(){
         const m = Math.floor(diff / 60000) % 60;
         const s = Math.floor(diff / 1000) % 60;
 
-        loveTimer.textContent = `${d} days ${h}h ${m}m ${s}s`;
+        document.getElementById("loveTimer").textContent =
+        `${d} days ${h}h ${m}m ${s}s`;
 
     },1000);
 }
